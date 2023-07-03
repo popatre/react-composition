@@ -20,15 +20,15 @@ The easiest solution? Component composition!
 
 Instead of passing userName through all these layers, we can try to compose the components at a higher level, like the App component.
 
-In the App, instead of passing username to Home, refactor the Home component to accept a prop of `title`.
+In the App, instead of passing `userName` to `Home`, refactor the `Home` component to accept a prop of `title`.
 
-**Pass it a component as its value and refactor the Home component to display the same as it current does - but without the current prop drilling**
+**Pass it a component as its value and refactor the Home component to display the same as it currently does - but without the prop drilling - do not move the userName variable from the app**
 
 ---
 
 ### Task 2.
 
-Complete the isSignedInProvider component in the contexts folder. This should provide access to whether someone is signed in or not - `Can use true or false for this`.
+Complete the `isSignedInProvider` component in the contexts folder. This should provide access to whether someone is signed in or not - `Can use true or false for this`.
 
 If they are signed in, they should be able to view the site.
 
@@ -66,4 +66,4 @@ The `Blog` component should handle the displaying of the posts/PostCard componen
 
 The `Blog` page should display the same as previously i.e Progress -> Posts -> progress (in the Footer)
 
-It should not re-render when the page scrolls and you should need to only use the BlogLayout component once i.e.
+It should not re-render when the page scrolls and you should need to only use the BlogLayout component once
