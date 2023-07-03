@@ -2,7 +2,7 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import Post from "./pages/Post";
+import BlogPost from "./pages/BlogPost";
 function App() {
     // For this exercise, leave this variable - don't move this from here
     const userName = "Joe Bloggs";
@@ -11,7 +11,7 @@ function App() {
             <Navbar username={userName} />
             <Routes>
                 <Route path="/" element={<Home username={userName} />} />
-                <Route path="/post" element={<Post />} />
+                <Route path="/blog" element={<BlogPost />} />
             </Routes>
         </>
     );

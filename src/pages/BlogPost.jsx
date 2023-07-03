@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import { posts } from "../data/posts";
 import PostCard from "../components/PostCard";
-export default function Post() {
+export default function BlogPost() {
     const [progress, setProgress] = useState(0);
     const renderCountRef = useRef(0);
 
@@ -24,14 +24,14 @@ export default function Post() {
     }, []);
 
     useEffect(() => {
-        /* Leave in Post.jsx */
+        /* Leave in BlogPost.jsx */
         renderCountRef.current += 1;
     });
 
     return (
         <>
             <h2 className="progress">Progress: {progress}%</h2>
-            {/* Leave the re-render h2 in Post.jsx */}
+            {/* Leave the re-render h2 in BlogPost.jsx */}
             <h2>I have re-rendered {renderCountRef.current} times</h2>
             <main className="content">
                 <h1>New Post</h1>
