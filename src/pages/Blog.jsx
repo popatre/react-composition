@@ -24,7 +24,7 @@ export default function Blog() {
     }, []);
 
     useEffect(() => {
-        /* Leave in BlogPost.jsx */
+        /* Leave in Blog.jsx */
         renderCountRef.current += 1;
     });
 
@@ -40,7 +40,14 @@ export default function Blog() {
                 })}
             </main>
             <footer>
-                <h2 className="progress">Progress: {progress}%</h2>
+                <h2 className="progress">
+                    {progress < 100
+                        ? `Progress: ${progress}%`
+                        : "You're at the bottom of the page"}
+                </h2>
+                <br></br>
+                <br></br>
+                <br></br>
             </footer>
         </>
     );
