@@ -2,16 +2,17 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import BlogPost from "./pages/BlogPost";
+import Blog from "./pages/Blog";
 function App() {
-    // For this exercise, leave this variable - don't move this from here
+    // For this exercise/sprint, pretend the userName needs to live in the app
     const userName = "Joe Bloggs";
+
     return (
         <>
-            <Navbar username={userName} />
+            <Navbar />
             <Routes>
-                <Route path="/" element={<Home username={userName} />} />
-                <Route path="/blog" element={<BlogPost />} />
+                <Route path="/" element={<Home userName={userName} />} />
+                <Route path="/blog" element={<Blog />} />
             </Routes>
         </>
     );

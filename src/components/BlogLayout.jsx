@@ -1,9 +1,9 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import { posts } from "../data/posts";
-import PostCard from "../components/PostCard";
-export default function BlogPost() {
+import PostCard from "./PostCard";
+
+export default function BlogLayout() {
     const [progress, setProgress] = useState(0);
-    const renderCountRef = useRef(0);
 
     useEffect(() => {
         const scrollListener = () => {
@@ -23,18 +23,12 @@ export default function BlogPost() {
         };
     }, []);
 
-    useEffect(() => {
-        /* Leave in BlogPost.jsx */
-        renderCountRef.current += 1;
-    });
-
     return (
         <>
             <h2 className="progress">Progress: {progress}%</h2>
-            {/* Leave the re-render h2 in BlogPost.jsx */}
-            <h2>I have re-rendered {renderCountRef.current} times</h2>
+
             <main className="content">
-                <h1>New Post</h1>
+                <h1>All Posts</h1>
                 {posts.map((post) => {
                     return <PostCard key={post.id} content={post.content} />;
                 })}

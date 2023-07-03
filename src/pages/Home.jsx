@@ -1,9 +1,9 @@
 import WelcomeMessage from "../components/WelcomeMessage";
 
-export default function Home({ username }) {
+export default function Home({ userName }) {
     return (
         <main>
-            <WelcomeMessage username={username} />
+            <WelcomeMessage userName={userName} />
             <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga,
                 quo. Veniam qui omnis, ipsa nihil maxime sed exercitationem

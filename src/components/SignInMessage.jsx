@@ -1,4 +1,4 @@
-export default function Error() {
+export default function SignInMessage() {
     return (
         <main>
             <h1>Please sign in to view this site</h1>

@@ -28,11 +28,11 @@ In the App, instead of passing username to Home, refactor the Home component to 
 
 ### Task 2.
 
-Complete the UserContextProvider component in the contexts folder. This should provide access to whether someone is signed in or not - `Can use true or false for this`.
+Complete the isSignedInProvider component in the contexts folder. This should provide access to whether someone is signed in or not - `Can use true or false for this`.
 
-If they are signed in, they should be able to view the webpage.
+If they are signed in, they should be able to view the site.
 
-If they are not signed in, they should be show the Error.jsx component
+If they are not signed in, they should be show the `SignInMessage.jsx` component
 
 You should make use of `children` to achieve this
 
@@ -40,22 +40,24 @@ You should make use of `children` to achieve this
 
 ### Task 3.
 
-Navigate to the /post page.
+Navigate to the `/blog` page.
 
-This page has a scroll listener which will update the state with the scroll progress. Each time the Post component re-renders, the map function iterates over the posts array and creates a new PostCard component for each item. Therefore, when scrolling occurs and triggers a re-render of the Post component, all the PostCard components will also re-render.
+This page has a scroll listener which will update the state with the scroll progress. Each time the Blog component re-renders, the map function iterates over the posts array and creates a new PostCard component for each item. Therefore, when scrolling occurs and triggers a re-render of the Blog component, all the PostCard components will also re-render.
 
-We could use the `useMemo` hook to address this, but can also achieve the same thing using composition!
+We could use the `useMemo` hook to address this, but can also achieve the same thing using **composition**!
 
-React components re-render when their state or props change.
+**React components re-render when their state or props change.**
 
-If the main bulk of the page `the Posts/PostCards` are props, unless they change, they should not be re-rendered.
+If the main bulk of the page `Blog/PostCards` are passed as props to another component, unless they change, they should not be re-rendered.
 
-A `PostLayout` component has been made for you.
+A `BlogLayout` component has been started for you.
 
-It currently has a copy of the Post component. Refactor this so that it deals with the scrolling/state and makes use of composition.
+It currently has a copy of the `Blog` component. Refactor this so that `BlogLayout` deals with the scrolling/state and makes use of composition.
 
-The `Post` component should handle the displaying of the posts/PostCard components.
+The `Blog` component should handle the displaying of the posts/PostCard components. - It doesn't not need any state
 
-`Keep the re-render useEffect in this component to track how many times it has re-rendered.`
+`Keep the re-render useEffect in the Blog component to track how many times it has re-rendered.`
 
-The Post page should display the same as previously i.e Progress -> Posts -> Footer progress
+The `Blog` page should display the same as previously i.e Progress -> Posts -> progress (in the Footer)
+
+It should not re-render when the page scrolls and you should need to only use the BlogLayout component once i.e.
