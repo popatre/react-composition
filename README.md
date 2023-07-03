@@ -22,10 +22,12 @@ In the App, instead of passing username to Home, refactor the Home component to 
 
 Pass it a component as its value and refactor the Home component to display the same as it current does - but without the current prop drilling
 
-2. Complete the UserContextProvider component in the contexts. This should provide access to whether someone is signed in or not - `Can use true or false`.
+2. Complete the UserContextProvider component in the contexts. This should provide access to whether someone is signed in or not - `Can use true or false for this`.
 
 If they are signed in, they should be able to view the webpage.
 
 If they are not signed in, they should be show the Error.jsx component
+
+You should make use of `children` to achieve this
 
 3. other children
