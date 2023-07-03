@@ -1,5 +1,5 @@
 .progress {
-    position: fixed;
+    /* position: fixed; */
     border: 1px solid black;
     background: mistyrose;
     padding: 1em 1.5em;
