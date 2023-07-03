@@ -32,9 +32,15 @@ Complete the isSignedInProvider component in the contexts folder. This should pr
 
 If they are signed in, they should be able to view the site.
 
-If they are not signed in, they should be show the `SignInMessage.jsx` component
+If they are not signed in, they should be showed the `SignInMessage.jsx` component
 
 You should make use of `children` to achieve this
+
+https://notes.northcoders.com/courses/js-front-end/composition-in-react
+
+The navbar with the sign in/out button should always be visible.
+
+**Think about where this component will need to live to enable this to happen/have access to the context**
 
 ---
 
