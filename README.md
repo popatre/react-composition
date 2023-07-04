@@ -24,7 +24,7 @@ In the App, instead of passing `word` to the `Home` component, refactor the `Hom
 
 ### Task 2.
 
-The other words page uses a super cool container to present the `WordList`
+The `other words` page uses a super cool container to present the `WordList`
 
 There's currently some prop drilling again (pretend the three words need to live in the `OtherWords` component)
 
