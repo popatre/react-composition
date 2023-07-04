@@ -1,26 +1,12 @@
-import WelcomeMessage from "../components/WelcomeMessage";
+import WelcomeHeader from "../components/WelcomeMessage";
 
-export default function Home({ userName }) {
+export default function Home({ word }) {
     return (
         <main>
-            <WelcomeMessage userName={userName} />
+            <WelcomeHeader word={word} />
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga,
-                quo. Veniam qui omnis, ipsa nihil maxime sed exercitationem
-                aperiam, porro doloribus amet fugiat possimus esse expedita iste
-                delectus, quae iusto?
-            </p>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga,
-                quo. Veniam qui omnis, ipsa nihil maxime sed exercitationem
-                aperiam, porro doloribus amet fugiat possimus esse expedita iste
-                delectus, quae iusto?
-            </p>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga,
-                quo. Veniam qui omnis, ipsa nihil maxime sed exercitationem
-                aperiam, porro doloribus amet fugiat possimus esse expedita iste
-                delectus, quae iusto?
+                This random word was brought to you by
+                https://random-word-api.herokuapp.com/home
             </p>
         </main>
     );

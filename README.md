@@ -12,17 +12,13 @@
 
 The current Home page is structured as follows:
 
-App -> Home -> WelcomeMessage
+App -> Home -> WelcomeHeader
 
-With only a few layers, this isn't a big deal, but this can quickly get out of hand in larger applications.
+Instead of passing `word` through all these layers, we can try to compose the components at a higher level, like the App component.
 
-The easiest solution? Component composition!
+In the App, instead of passing `word` to the `Home` component, refactor the `Home` component to accept a prop of `header`.
 
-Instead of passing userName through all these layers, we can try to compose the components at a higher level, like the App component.
-
-In the App, instead of passing `userName` to `Home`, refactor the `Home` component to accept a prop of `title`.
-
-**Pass it a component as its value and refactor the Home component to display the same as it currently does - but without the prop drilling - do not move the userName variable from the app**
+**Pass it a component as its value and refactor the Home component to display the same as it currently does - but without the prop drilling - do not move the word variable from the app**
 
 ---
 

@@ -34,7 +34,7 @@ export default function BlogLayout() {
                 })}
             </main>
             <footer>
-                <h2 className="progress">
+                <h2 className="footer-progress">
                     {progress < 100
                         ? `Progress: ${progress}%`
                         : "You're at the bottom of the page"}

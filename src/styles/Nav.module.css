@@ -6,7 +6,7 @@
 
 .navbarList {
     list-style: none;
-    grid-column: 8 /-1;
+    grid-column: 6 /-1;
     display: flex;
     justify-content: space-around;
 }
