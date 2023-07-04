@@ -52,7 +52,7 @@ The navbar with the sign in/out button should always be visible.
 
 ---
 
-### Task 3.
+### Task 4.
 
 Navigate to the `/blog` page.
 
