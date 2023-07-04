@@ -24,6 +24,20 @@ In the App, instead of passing `word` to the `Home` component, refactor the `Hom
 
 ### Task 2.
 
+The other words page uses a super cool container to present the `WordList`
+
+There's currently some prop drilling again (pretend the three words need to live in the `OtherWords` component)
+
+Leaving word1, word2 and word3 in their current component, using composition, refactor this so that prop drilling is not needed to pass the props to `WordList`. They should be able to be passed from `OtherWords`, directly to `WordList`.
+
+The components should still present the same. HINT: You will need to use `children`
+
+https://notes.northcoders.com/courses/js-front-end/composition-in-react
+
+---
+
+### Task 3.
+
 Complete the `isSignedInProvider` component in the contexts folder. This should provide access to whether someone is signed in or not - `Can use true or false for this`.
 
 If they are signed in, they should be able to view the site.
@@ -31,8 +45,6 @@ If they are signed in, they should be able to view the site.
 If they are not signed in, they should be showed the `SignInMessage.jsx` component
 
 You should make use of `children` to achieve this
-
-https://notes.northcoders.com/courses/js-front-end/composition-in-react
 
 The navbar with the sign in/out button should always be visible.
 

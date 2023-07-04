@@ -17,7 +17,7 @@ export default function Navbar() {
                 </li>
                 <li className={styles.navbarItem}>
                     <Link to="/random" className={styles.navbarLink}>
-                        Random
+                        Other Words
                     </Link>
                 </li>
                 <button className={styles.signinButton}>Sign in</button>
