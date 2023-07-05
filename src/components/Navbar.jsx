@@ -12,7 +12,7 @@ export default function Navbar() {
             <ul className={styles.navbarList}>
                 {navLinks.map((link) => {
                     return (
-                        <li className={styles.navbarItem}>
+                        <li key={link.label} className={styles.navbarItem}>
                             <Link
                                 to={`/${link.path}`}
                                 className={styles.navbarLink}
