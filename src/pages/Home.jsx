@@ -1,4 +1,4 @@
-import WelcomeHeader from "../components/WelcomeMessage";
+import WelcomeHeader from "../components/WelcomeHeader";
 
 export default function Home({ word }) {
     return (

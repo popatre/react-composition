@@ -20,7 +20,7 @@ function App() {
         <>
             <Navbar />
             <Routes>
-                <Route path="/" element={<Home title={word} />} />
+                <Route path="/" element={<Home word={word} />} />
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/random" element={<OtherWords word={word} />} />
             </Routes>

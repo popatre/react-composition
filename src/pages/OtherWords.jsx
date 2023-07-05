@@ -1,6 +1,6 @@
 import SuperCoolContainer from "../components/SuperCoolContainer";
 
-export default function RandomPage({ word }) {
+export default function OtherWords({ word }) {
     const word1 = "spanners";
     const word2 = "lawnmower";
     const word3 = "bus";
