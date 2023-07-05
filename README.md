@@ -62,16 +62,22 @@ We could use the `useMemo` hook to address this, but can also achieve the same t
 
 **React components re-render when their state or props change.**
 
-If the main bulk of the page `Blog/PostCards` are passed as props to another component, unless they change, they should not be re-rendered.
+If the main bulk of the page `Blog/PostCards` are passed as props (children) to another component, unless they change, they should not be re-rendered.
 
 A `BlogLayout` component has been started for you.
 
-It currently has a copy of the `Blog` component. Refactor this so that `BlogLayout` deals with the scrolling/state and makes use of composition.
+It currently has a copy of the `Blog` component. Refactor this so that `BlogLayout` deals with the scrolling progress/state and makes use of composition.
 
 The `Blog` component should handle the displaying of the posts/PostCard components. - It doesn't not need any state
 
 `Keep the re-render useEffect in the Blog component to track how many times it has re-rendered.`
 
-The `Blog` page should display the same as previously i.e Progress -> Posts -> progress (in the Footer)
+The page should display the same as before i.e
 
-It should not re-render when the page scrolls and you should need to only use the BlogLayout component once
+        Progress bar at the top
+
+        mapped Blog posts
+
+        progress bar (in the Footer)
+
+It should not re-render the blog component/cards when the page scrolls and you should need to only use the BlogLayout component once
