@@ -30,7 +30,7 @@ There's currently some prop drilling again!
 
 Using composition, refactor so that prop drilling is not needed to pass the props to `WordList`. They should be able to be passed from `OtherWords`, directly to `WordList`.
 
-The components should still present the same. HINT: You will need to use `children`
+The components should still present the same. You should aim to use `children` for this task.
 
 https://notes.northcoders.com/courses/js-front-end/composition-in-react
 
